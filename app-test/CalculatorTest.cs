@@ -1,3 +1,4 @@
+using app;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace app_test
@@ -8,7 +9,8 @@ namespace app_test
         [TestMethod]
         public void Add()
         {
-            Assert.AreEqual(1, 1);
+            var actual = Calculator.Add(0, 0);
+            Assert.AreEqual(actual, 0);
         }
 
         [TestMethod]
