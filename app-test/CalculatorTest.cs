@@ -6,11 +6,13 @@ namespace app_test
     [TestClass]
     public class CalculatorTest
     {
-        [TestMethod]
-        public void Add()
+        [DataTestMethod]
+        [DataRow(0)]
+        public void Add(int value)
         {
-            var actual = Calculator.Add(0, 0);
-            Assert.AreEqual(actual, 0);
+            var actual = Calculator.Add(value, value);
+            var expected = value + value;
+            Assert.AreEqual(actual, expected);
         }
 
         [TestMethod]
