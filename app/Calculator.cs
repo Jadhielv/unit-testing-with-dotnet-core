@@ -4,7 +4,7 @@ namespace app
     {
         public static int Add(int lhs, int rhs)
         {
-            return 0;
+            return lhs + rhs;
         }
     }
 }
