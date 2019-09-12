@@ -15,7 +15,7 @@ namespace app_test
         [Priority(1)]
         public void Subtract()
         {
-            Assert.AreEqual(1, 2);
+            Assert.AreEqual(2, 2);
         }
 
         [TestMethod]

@@ -1,13 +1,12 @@
+using System.Linq;
+
 namespace OrderSystem
 {
     public class OrderHelper
     {
-        public OrderHelper()
-        { }
-
         public static double Cost(Order order)
         {
-            return 0;
+            return order.Items.Sum(i => i.Price * i.Quantity);
         }
     }
 }
