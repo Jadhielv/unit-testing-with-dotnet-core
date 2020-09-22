@@ -3,3 +3,15 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+.vs
+.ionide
+bin
+obj
+*.user
+
+app\bin
+app\obj
+
+app-test\bin
+app-test\obj
